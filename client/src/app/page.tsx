@@ -1,5 +1,10 @@
-import MainPage from "@/pages/main/ui/MainPage";
+import { AuthPage } from "@/pages/auth/AuthPage";
 
-export default function Router() {
-  return <MainPage />;
+export const metadata = {
+  title: "Login | INTERLINK",
+  description: "Sign in to your account",
+};
+
+export default function Page() {
+  return <AuthPage />;
 }
