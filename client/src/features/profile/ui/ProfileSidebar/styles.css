@@ -1,0 +1,132 @@
+.profile-sidebar {
+  width: 100%;
+}
+
+.profile-sidebar__card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-sidebar__avatar-wrapper {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.profile-sidebar__avatar {
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-sidebar__status-dot {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  background-color: #52c41a;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+
+.profile-sidebar__info {
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.profile-sidebar__name-text {
+  margin-bottom: 4px !important;
+  font-weight: 700 !important;
+  color: #1a1a1a !important;
+}
+
+.profile-sidebar__role-text {
+  display: block;
+  color: #5932ea;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.profile-sidebar__location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #8c8c8c;
+}
+
+.profile-sidebar__department {
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.profile-sidebar__department-icon {
+  background: #ffffff;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8c8c8c;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.profile-sidebar__label {
+  display: block;
+  font-size: 10px;
+  color: #bfbfbf;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.profile-sidebar__value {
+  display: block;
+  font-weight: 600;
+  color: #262626;
+  font-size: 13px;
+}
+
+.profile-sidebar__contacts {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-sidebar__contacts-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #595959;
+}
+
+.profile-sidebar__icon {
+  color: #bfbfbf;
+}
+
+.profile-sidebar__edit-btn {
+  width: 100%;
+  height: 48px !important;
+  border-radius: 12px !important;
+  background: #5932ea !important;
+  font-weight: 600 !important;
+}
+
+.profile-sidebar__edit-btn:hover {
+  background: #4a29c4 !important;
+}

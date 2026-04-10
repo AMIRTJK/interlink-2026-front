@@ -1,0 +1,41 @@
+.profile-stats {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.profile-stats__card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.profile-stats__card--blue {
+  background: #5932ea;
+  color: #ffffff;
+}
+
+.profile-stats__label {
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #8c8c8c;
+}
+
+.profile-stats__card--blue .profile-stats__label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.profile-stats__value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.profile-stats__card--blue .profile-stats__value {
+  color: #ffffff;
+}
