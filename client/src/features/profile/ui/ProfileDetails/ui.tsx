@@ -20,32 +20,32 @@ export const ProfileDetails = ({ user }: IProps) => {
   ];
 
   return (
-    <div className="profile-details">
-      <div className="profile-details__card">
-        <div className="profile-details__header">
-          <div className="profile-details__icon-box">
+    <div className="profile__details">
+      <div className="profile__details-card">
+        <div className="profile__details-header">
+          <div className="profile__details-icon">
             <AppstoreOutlined />
           </div>
-          <Title level={5} className="profile-details__title">
+          <Title level={5} className="profile__details-title">
             Персональные данные
           </Title>
         </div>
 
-        <div className="profile-details__content">
+        <div className="profile__details-content">
           <Row gutter={[48, 32]}>
             {detailItems.map((item, index) => (
               <Col span={12} key={index}>
-                <div className="profile-details__item">
-                  <Text className="profile-details__label">
+                <div className="profile__details-item">
+                  <Text className="profile__details-label">
                     {item.label}
                   </Text>
                   <Text
-                    className="profile-details__value"
+                    className="profile__details-value"
                     style={{ color: item.color }}
                   >
                     {item.value}
                   </Text>
-                  <div className="profile-details__divider" />
+                  <div className="profile__details-divider" />
                 </div>
               </Col>
             ))}

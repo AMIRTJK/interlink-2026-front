@@ -16,12 +16,12 @@ interface IProps {
 
 export const Profile = ({ user, activeTab, setActiveTab }: IProps) => {
   return (
-    <div className="profile-feature">
+    <div className="profile">
       <Row gutter={[40, 40]}>
         <Col xs={24} lg={8}>
-          <div className="profile-feature__left-column">
+          <div className="profile__column-left">
             <ProfileSidebar user={user} />
-            <div className="profile-feature__stats-area">
+            <div className="profile__stats-wrapper">
               <ProfileStats
                 activeDocs={user.activeDocs}
                 completedTasks={user.completedTasks}
@@ -31,14 +31,14 @@ export const Profile = ({ user, activeTab, setActiveTab }: IProps) => {
         </Col>
 
         <Col xs={24} lg={16}>
-          <div className="profile-feature__right-column">
-            <div className="profile-feature__tabs-wrapper">
+          <div className="profile__column-right">
+            <div className="profile__tabs-wrapper">
               <ProfileTabs activeKey={activeTab} onChange={setActiveTab} />
             </div>
-            <div className="profile-feature__content-area">
+            <div className="profile__content">
               {activeTab === "details" && <ProfileDetails user={user} />}
               {activeTab === "modules" && (
-                <div className="profile-feature__placeholder">
+                <div className="profile__placeholder">
                   Раздел «Модули системы» в разработке
                 </div>
               )}

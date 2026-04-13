@@ -19,12 +19,12 @@ export const ProfileTabs = ({ activeKey, onChange }: IProps) => {
   ];
 
   return (
-    <div className="profile-tabs">
+    <div className="profile__tabs">
       <Tabs
         activeKey={activeKey}
         onChange={onChange}
         items={items}
-        className="profile-tabs__nav"
+        className="profile__tabs-nav"
         animated={{ inkBar: true, tabPane: true }}
       />
     </div>

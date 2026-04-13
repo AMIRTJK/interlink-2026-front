@@ -1,32 +1,32 @@
-.profile-feature {
+.profile {
   width: 100%;
 }
 
-.profile-feature__left-column {
+.profile__column-left {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-.profile-feature__stats-area {
+.profile__stats-wrapper {
   width: 100%;
 }
 
-.profile-feature__right-column {
+.profile__column-right {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-.profile-feature__tabs-wrapper {
+.profile__tabs-wrapper {
   margin-bottom: 0;
 }
 
-.profile-feature__content-area {
+.profile__content {
   flex: 1;
 }
 
-.profile-feature__placeholder {
+.profile__placeholder {
   background: #ffffff;
   border-radius: 24px;
   padding: 40px;
@@ -42,8 +42,8 @@
 }
 
 @media (max-width: 992px) {
-  .profile-feature__left-column,
-  .profile-feature__right-column {
+  .profile__column-left,
+  .profile__column-right {
     gap: 24px;
   }
 }
