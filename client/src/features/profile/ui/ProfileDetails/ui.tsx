@@ -21,28 +21,37 @@ export const ProfileDetails = ({ user }: IProps) => {
 
   return (
     <div className="profile-details">
-      <div className="profile-details__header">
-        <AppstoreOutlined className="profile-details__header-icon" />
-        <Title level={5} className="profile-details__header-title">
-          Персональные данные
-        </Title>
-      </div>
+      <div className="profile-details__card">
+        <div className="profile-details__header">
+          <div className="profile-details__icon-box">
+            <AppstoreOutlined />
+          </div>
+          <Title level={5} className="profile-details__title">
+            Персональные данные
+          </Title>
+        </div>
 
-      <Row gutter={[32, 32]} className="profile-details__grid">
-        {detailItems.map((item, index) => (
-          <Col span={12} key={index} className="profile-details__item">
-            <Text className="profile-details__label" type="secondary">
-              {item.label}
-            </Text>
-            <Text
-              className="profile-details__value"
-              style={{ color: item.color }}
-            >
-              {item.value}
-            </Text>
-          </Col>
-        ))}
-      </Row>
+        <div className="profile-details__content">
+          <Row gutter={[48, 32]}>
+            {detailItems.map((item, index) => (
+              <Col span={12} key={index}>
+                <div className="profile-details__item">
+                  <Text className="profile-details__label">
+                    {item.label}
+                  </Text>
+                  <Text
+                    className="profile-details__value"
+                    style={{ color: item.color }}
+                  >
+                    {item.value}
+                  </Text>
+                  <div className="profile-details__divider" />
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </div>
+      </div>
     </div>
   );
 };

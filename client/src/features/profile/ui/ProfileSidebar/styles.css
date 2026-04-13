@@ -5,50 +5,61 @@
 .profile-sidebar__card {
   background: #ffffff;
   border-radius: 24px;
-  padding: 32px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 32px 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+}
+
+.profile-sidebar__avatar-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
 }
 
 .profile-sidebar__avatar-wrapper {
   position: relative;
-  margin-bottom: 24px;
 }
 
 .profile-sidebar__avatar {
   border: 4px solid #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.profile-sidebar__avatar img {
+  object-fit: cover !important;
 }
 
 .profile-sidebar__status-dot {
   position: absolute;
   bottom: 8px;
   right: 8px;
-  width: 16px;
-  height: 16px;
-  background-color: #52c41a;
+  width: 18px;
+  height: 18px;
+  background-color: #00ac4f;
   border: 3px solid #ffffff;
   border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.profile-sidebar__info {
+.profile-sidebar__header {
+  text-align: center;
   margin-bottom: 24px;
-  width: 100%;
 }
 
-.profile-sidebar__name-text {
+.profile-sidebar__name {
   margin-bottom: 4px !important;
   font-weight: 700 !important;
   color: #1a1a1a !important;
+  font-size: 20px !important;
+  line-height: 1.2 !important;
 }
 
-.profile-sidebar__role-text {
+.profile-sidebar__role {
   display: block;
   color: #5932ea;
   font-weight: 600;
+  font-size: 13px;
   margin-bottom: 8px;
 }
 
@@ -56,77 +67,102 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  color: #8c8c8c;
+  gap: 6px;
 }
 
-.profile-sidebar__department {
-  background: #f8f9fa;
-  border-radius: 16px;
+.profile-sidebar__location-icon {
+  color: #b5b7c0;
+  font-size: 12px;
+}
+
+.profile-sidebar__location-text {
+  color: #b5b7c0 !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+
+.profile-sidebar__department-card {
+  background: #f8f9fb;
+  border-radius: 12px;
   padding: 16px;
-  width: 100%;
   display: flex;
   align-items: center;
   gap: 16px;
   margin-bottom: 24px;
-  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.01);
 }
 
-.profile-sidebar__department-icon {
+.profile-sidebar__department-icon-box {
   background: #ffffff;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #8c8c8c;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
 }
 
 .profile-sidebar__label {
   display: block;
   font-size: 10px;
-  color: #bfbfbf;
+  color: #b5b7c0;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
+  margin-bottom: 2px;
 }
 
-.profile-sidebar__value {
+.profile-sidebar__department-name {
   display: block;
   font-weight: 600;
-  color: #262626;
+  color: #1a1a1a;
   font-size: 13px;
 }
 
 .profile-sidebar__contacts {
   width: 100%;
-  text-align: left;
-  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
+  margin-bottom: 32px;
 }
 
-.profile-sidebar__contacts-item {
+.profile-sidebar__contact-item {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #595959;
 }
 
-.profile-sidebar__icon {
-  color: #bfbfbf;
+.profile-sidebar__contact-icon {
+  color: #b5b7c0;
+  font-size: 16px;
+}
+
+.profile-sidebar__contact-text {
+  color: #595959 !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+
+.profile-sidebar__actions {
+  margin-top: auto;
 }
 
 .profile-sidebar__edit-btn {
-  width: 100%;
   height: 48px !important;
   border-radius: 12px !important;
   background: #5932ea !important;
   font-weight: 600 !important;
+  font-size: 14px !important;
+  border: none !important;
+  box-shadow: 0 8px 20px rgba(89, 50, 234, 0.2) !important;
+  transition: all 0.3s ease !important;
 }
 
 .profile-sidebar__edit-btn:hover {
   background: #4a29c4 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(89, 50, 234, 0.3) !important;
 }

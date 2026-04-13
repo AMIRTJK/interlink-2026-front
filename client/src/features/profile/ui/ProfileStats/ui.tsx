@@ -15,7 +15,7 @@ export const ProfileStats = ({ activeDocs, completedTasks }: IProps) => {
         <Text className="profile-stats__label">Активных док.</Text>
         <Text className="profile-stats__value">{activeDocs}</Text>
       </div>
-      <div className="profile-stats__card">
+      <div className="profile-stats__card profile-stats__card--white">
         <Text className="profile-stats__label">Задач выполнено</Text>
         <Text className="profile-stats__value">{completedTasks}</Text>
       </div>

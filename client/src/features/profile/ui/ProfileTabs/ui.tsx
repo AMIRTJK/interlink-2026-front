@@ -25,6 +25,7 @@ export const ProfileTabs = ({ activeKey, onChange }: IProps) => {
         onChange={onChange}
         items={items}
         className="profile-tabs__nav"
+        animated={{ inkBar: true, tabPane: true }}
       />
     </div>
   );
