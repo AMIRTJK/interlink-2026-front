@@ -1,6 +1,6 @@
 import { LoginForm } from "@/features/login";
 
-export const AuthPage = () => {
+const AuthPage = () => {
   return (
     <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#020617] font-sans selection:bg-blue-500/30">
       {/* Background Section */}
@@ -39,3 +39,5 @@ export const AuthPage = () => {
     </div>
   );
 };
+
+export default AuthPage;

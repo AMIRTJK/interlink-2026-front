@@ -1,4 +1,4 @@
-import { AuthPage } from "@/pages/auth/AuthPage";
+import LoginPage from "./login/page";
 
 export const metadata = {
   title: "Login | INTERLINK",
@@ -6,5 +6,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <AuthPage />;
+  return <LoginPage />;
 }
